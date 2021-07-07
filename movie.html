@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/movie.css">
+    <script src="js/movie.js"></script>
+    <title>我的电影</title>
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav id="nav">
+        <div>
+            <p id="movieLogo"><a href="home.html">回到首页</a></p>
+            <ul id="movieNav">
+                <li><a href="#">我的电影</a></li>
+                <li><a href="#">推荐</a></li>
+                <li><a href="#">排行榜</a></li>
+                <li><a href="#">我的喜欢</a></li>
+                <li><a href="#">关于</a></li>
+                <li id="movieSearch"><img src="imgs/电影/nav/搜索.png" alt=""></li>
+                <li><input type="text" value="" placeholder=""></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主内容区 -->
+    <div id="main">
+        <div id="contain1">
+            <!-- 轮播图 -->
+            <div id="con1">
+                <img class="movieImg" src="imgs/电影/loop/夺冠.jpg" alt="">
+                <div id="con1_1">
+                    <p class="movieName">《夺冠》</p>
+                    <p class="movieKind">类型：剧情 / 历史</p>
+                    <p class="movieLevel"><img src="imgs/电影/loop/评级.png" alt=""><span> 9.5 </span>&nbsp;&nbsp;<img src="imgs/电影/loop/时长.png" alt=""><span> 135mins</span></p>
+                    <p class="movieSummary">重温新中国70年的峥嵘岁月，感悟"我"与中国的血脉相连，唤醒人们内心最朴素的爱国情怀。</p>
+                </div>
+            </div>
+            <!-- 排行榜 -->
+            <div id="con2">
+
+            </div>
+        </div>       
+    </div>
+    
+    <!-- 推荐 -->
+    <div id="con3">
+        <span class="con3_title">推荐</span>
+        <div id="con3_1">
+            <img class="arrow left" src="imgs/电影/recommand/向左.png" alt="">
+            <ul id="recommandUl">
+                <li>
+                    <img src="imgs/电影/recommand/阳光普照.webp" alt="">
+                    <p class="content"><span class="title">阳光普照</span><span class="kind">类型: 剧情 / 家庭 / 犯罪</span></p>
+                </li>
+                <li>
+                    <img src="imgs/电影/recommand/八佰.webp" alt="">
+                    <p class="content"><span class="title">八佰</span><span class="kind">类型: 剧情 / 历史 / 战争</span></p>
+                </li>
+                <li><img src="imgs/电影/recommand/1917.jpg" alt="">
+                    <p class="content"><span class="title">1917</span><span class="kind">类型: 剧情 / 战争</span></p>
+                </li>
+                <li><img src="imgs/电影//recommand/疯狂动物城.jpg" alt="">
+                    <p class="content"><span class="title">疯狂动物城</span><span class="kind">类型: 喜剧 / 动画 / 冒险</span></p>
+                </li>
+            </ul>
+            <img class="arrow right" src="imgs/电影/recommand/向右.png" alt="">
+        </div>
+    </div>
+
+    <!-- 我的喜欢 -->
+    <div id="con4">
+        <div id="con4_1">
+            <p class="con4Title">Favourite</p>
+            <p class="con4Info">
+                <span class="infoName"></span>
+                <span class="infoIntro"></span>
+            </p>
+            <ul class="con4_1_1 favour">
+                <li><img src="imgs/电影/favourite/红海行动2.webp" alt=""></li>
+                <li><img src="imgs/电影/favourite/中国机长2.webp" alt=""></li>
+                <li><img src="imgs/电影/favourite/攀登者3.webp" alt=""></li>
+                <li><img src="imgs/电影/favourite/战狼22.jpg" alt=""></li>
+            </ul>
+            <ul class="con4_1_2 favour">
+                <li><img src="imgs/电影/favourite/你好，李焕英2.jpg" alt=""></li>
+                <li><img src="imgs/电影/favourite/大鱼海棠2.jpg" alt=""></li>
+                <li><img src="imgs/电影/favourite/刺杀小说家2.jpg" alt=""></li>
+                <li><img src="imgs/电影/favourite/流浪地球2.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

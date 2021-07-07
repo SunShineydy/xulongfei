@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/music.css" />
+    <script type="text/javascript" src="js/music.js"></script>
+    <title>我的音乐</title>
+  </head>
+
+  <body>
+    <!-- 第一部分 -->
+    <div id="contain1">
+      <!-- 放音乐图片 -->
+      <div id="con1">
+        <p>
+          <img src="imgs/音乐/con1/平凡之路.jpg" alt="" />
+          <span class="songName">平凡之路</span>
+          <span class="singerName">朴树</span>
+        </p>
+      </div>
+      <!-- 放音乐详情信息 -->
+      <div id="con2">
+        <!-- 右上方：放歌曲的介绍 -->
+        <div id="con2_1">
+          <!-- 右上方导航栏 -->
+          <div id="sidebar">
+            <ul id="sidebarUl">
+              <li>音乐</li>
+              <li>推荐</li>
+              <li>排行榜</li>
+              <li>MV</li>
+              <a href="home.html"><li>首页</li></a>
+            </ul>
+          </div>
+          <!-- 右上方歌曲信息 -->
+          <div id="songInfo">
+            <p>
+              <span>Song Info</span>
+              <span class="songName">Song - 平凡之路</span>
+              <span class="album">Singer - 猎户星座</span>
+              <span class="singerName">Album - 朴树</span>
+            </p>
+          </div>
+        </div>
+        <!-- 右下方：放歌曲的图片 -->
+        <div id="con2_2">
+          <img src="imgs/音乐/con2/bg5.jpeg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- 第二部分 -->
+    <div id="contain2">
+      <!--  -->
+      <div id="con3">
+        <!-- 音乐播放器 -->
+        <div id="con3_1">
+          <img class="con3Album" src="imgs/音乐/con3/专辑2.png" alt="">
+          <img class="albumPlay" src="imgs/音乐/con3/album播放.png" alt="">
+          <img class="albumPause" src="imgs/音乐/con3/album暂停.png" alt="">
+          <img class="albumLast" src="imgs/音乐/con3/album上一首.png" alt="">
+          <img class="albumNext" src="imgs/音乐/con3/album下一首.png" alt="">
+          <!-- 音乐播放器播放音乐 -->
+          <audio id="music1" src="imgs/音乐/con3/可惜没如果.mp3" preload="auto">
+
+          </audio>
+        </div>
+        <!-- 音乐推荐 -->
+        <div id="con3_2">
+          <ul id="recommand">
+            <li>
+              <img class="play" src="imgs/音乐/con3/播放.png" alt="">
+              <p class="reBg"><img src="imgs/音乐/con3/可惜没如果.jpg" alt=""></p>
+              <p class="reSongName">可惜没如果</p>
+              <p class="reSingerName">林俊杰</p>
+            </li>
+            <li>
+              <img class="play" src="imgs/音乐/con3/播放.png" alt="">
+              <p class="reBg"><img src="imgs/音乐/con3/耗尽.jpg" alt=""></p>
+              <p class="reSongName">耗尽</p>
+              <p class="reSingerName">薛之谦</p>
+            </li>
+            <li>
+              <img class="play" src="imgs/音乐/con3/播放.png" alt="">
+              <p class="reBg"><img src="imgs/音乐/con3/夜空中最亮的星.jpg" alt=""></p>
+              <p class="reSongName">夜空中最亮的星</p>
+              <p class="reSingerName">张杰</p>
+            </li>
+            <li>
+              <img class="play" src="imgs/音乐/con3/播放.png" alt="">
+              <p class="reBg"><img src="imgs/音乐/con3/身骑白马.jpg" alt=""></p>
+              <p class="reSongName">身骑白马</p>
+              <p class="reSingerName">徐佳莹</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 侧边栏排行榜 -->
+      <div id="con4">
+          <p class="list">排行榜</p>
+          <p><span>歌曲</span><span>歌手</span><span>时长</span><span>喜爱程度</span></p>
+        <ul class="sideSongName">
+            <li>像风一样</li>
+            <li>像我这样的人</li>
+            <li>青花瓷</li>
+            <li>泡沫</li>
+            <li>虚拟</li>
+            <li>往后余生</li>
+            <li>你若成风</li>
+            <li>晴天</li>
+            <li>清明雨上</li>
+            <li>烟花易冷</li>
+        </ul>
+        <ul class="sideSingerName">
+            <li>薛之谦</li>
+            <li>毛不易</li>
+            <li>周杰伦</li>
+            <li>邓紫棋</li>
+            <li>王贰浪</li>
+            <li>王贰浪</li>
+            <li>许嵩</li>
+            <li>周杰伦</li>
+            <li>许嵩</li>
+            <li>周杰伦</li>
+        </ul>
+        <ul class="sideSongTime">
+            <li>04:15</li>
+            <li>03:27</li>
+            <li>03:59</li>
+            <li>04:33</li>
+            <li>04:16</li>
+            <li>03:51</li>
+            <li>03:41</li>
+            <li>04:29</li>
+            <li>03:39</li>
+            <li>04:23</li>
+        </ul>
+        <ul class="sideSongFavour">
+            <li>99</li>
+            <li>94</li>
+            <li>95</li>
+            <li>97</li>
+            <li>93</li>
+            <li>96</li>
+            <li>95</li>
+            <li>92</li>
+            <li>94</li>
+            <li>90</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

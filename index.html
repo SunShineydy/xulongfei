@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登陆</title>
+    <!-- 引入外部js：音乐播放功能 -->
+    <script type="text/javascript" src="js/index.js"></script>
+    <!-- 引入外部css：外部样式 -->
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- 背景音乐 -->
+    <div id="audioBox">
+        <p id="musicName">
+            <img id="musicImg" src="imgs/login/backgroundMusic.png" alt="">
+            
+        </p>
+        <p id="date"></p>
+    </div>
+
+    <!-- 登录界面 -->
+    <div id="loginContainer">
+        <div id="loginWelcome">
+            <!-- @font-face更换字体：https://www.cnblogs.com/moqiutao/archive/2015/12/23/5070463.html -->
+            <p id="welcomeWord">
+                <span>My</span>
+                <span>Blog</span>
+            </p>
+            <form action="#" id="loginForm">
+                <h2>Login</h2>
+                <input type="text" id="username" placeholder="用户名">
+                <input type="password" id="password" placeholder="密码">
+                <button type="button" id="btn">Submit</button>
+                <span id="error"></span>
+            </form>
+        </div>
+    </div>
+
+    <!-- 背景图片 -->
+    <div id="backgroundImg">
+    </div>
+</body>
+
+</html>
