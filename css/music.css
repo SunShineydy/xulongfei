@@ -1,0 +1,389 @@
+body{
+    margin:0;
+    padding:0;
+    /* background-color: antiquewhite; */
+}
+
+#contain1{
+    position: relative;
+    width:100%;
+    /* height:600px; */
+    height:100vh;
+    /* background-color:violet; */
+}
+
+
+#con1,#con2{
+    float: left;
+    width:50%;
+    /* height:600px; */
+    height:100vh;
+}
+/* 左侧 */
+#con1{
+    position: relative;
+    /* background-color:#c24540; */
+    background-color: #C54D51;
+}
+
+#con1 p{
+   position: absolute;
+   /* top:130px; */
+   /* left:170px; */
+   left:0px;
+   right:0px;
+   top:0px;
+   bottom:0px;
+   margin:auto;
+   width:350px;
+   height:350px;
+   background-color:#224540;
+} 
+#con1 p img{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:350px;
+    height:350px;
+}
+
+#con1 p span{
+    position: absolute;
+    color:white;
+    /* top:120px; */
+    top:150px;
+    font-size: 20px;
+    left:-40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+
+} 
+/* #con1 p span:nth-child(1){
+    font-size: 50px;
+}  */
+#con1 p span:nth-child(2){
+    top:60px;
+    top:90px;
+    left:-40px;
+    font-size: 40px;
+    /* word-spacing: 20px; */
+    font-weight: normal;
+} 
+ /* 右侧 */
+#con2{
+    position: relative;
+    
+}
+#con2_1,#con2_2{
+    /* height:300px; */
+    height:40vh;
+}
+/* 右上方 */
+#con2_1{
+    position: relative;
+    background-color: #463c32;
+}
+
+/* 侧边导航栏 */
+#sidebar{
+    position:fixed;
+    right:0;
+    top:0;
+    z-index:1;
+}
+#sidebar ul#sidebarUl{
+    position:relative;
+    list-style-type:none;
+    color:white;
+    font-weight: 300;
+    margin-right: 10px;
+    z-index: 2;
+    opacity: 0;
+}
+#sidebar ul#sidebarUl:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+#sidebar ul#sidebarUl li{
+    display: block;
+    text-align: center;
+    height:36px;
+    line-height: 30px;
+    /* margin-top:15px; */
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+a:visited{
+    color:white;
+}
+/* 鼠标移上以后再显示效果 */
+#sidebar ul#sidebarUl li:hover::after{
+    /* 每一个li后面需要添加的内容 */
+    content:"";
+    /* 把每一个内容都放到li的后面，隐藏起来 */
+    position:absolute;
+    /* top:1px; */
+    left:100px;
+    width:54px;
+    height:28px;
+    border-radius: 4px;
+    opacity: 0;
+
+    background-color:#c24540;
+    /* 给内容设置动画 */
+    animation: sidebar 1s cubic-bezier(0.19,1,0.22,1) forwards;
+    /* animation-delay:1s; */
+}
+@keyframes sidebar {
+    0%{
+        opacity: 0;
+        left:100px;
+    }
+    100%{
+        opacity: 0.5;
+        left: 36px;
+    }
+}
+/* 右上方歌曲信息 */
+#songInfo{
+    position:absolute;
+    top:20px;
+    left:60px;
+    width:350px;
+    height:250px;
+    /* letter-spacing: 字符间距；word-spacing：单词间距 */
+    
+}
+#songInfo span{
+    display: block;
+    font-size: 16px;
+    font-family:'Times New Roman', Times, serif;
+    color:#C7B9A5;
+    font-weight:normal;
+    margin-top:10px;
+}
+#songInfo span:nth-child(1){
+   font-size: 80px;
+   display: block;
+   color:#61574d;
+   font-weight: normal;
+   word-spacing:20px;
+   margin-bottom: 10px;
+}
+
+/* 右下方 */
+#con2_2{
+    background-color: #463c32;
+    height:60vh;
+}
+#con2_2 img{
+    width:100%;
+    /* height:300px; */
+    height:60vh;
+    opacity: 0.6;
+}
+
+/* 第二部分 */
+#contain2{
+    position: relative;
+    width:100%;
+    height:500px;
+    /* height:100vh; */
+    color:white;
+    font-weight: 300;
+}
+
+/* 音乐播放器与音乐推荐 */
+#con3{
+    float: left;
+    width:65%;
+    height:500px;
+    /* background-color: #E69D39; */
+    background:url(../imgs/音乐/con3/像风一样.jpg) no-repeat;
+    background-size:cover;
+}
+#con3 #con3_1{
+    width:300px;
+    height:400px;
+
+    position: relative;
+    top:50px;    
+    left:50px;
+    margin:0;
+    border-radius:6px;
+    /* background-color: #C7B9A5; */
+    opacity: 1;
+}
+#con3_1 img{
+    position:absolute;
+    width:40px;
+    top:290px;
+}
+#con3_1 img:hover{
+    cursor: pointer;
+}
+#con3_1 img.con3Album{
+    width:200px;
+    top:45px;
+    left:42px;
+    user-select:none;
+}
+#con3_1 img.albumLast{
+    left:60px;
+}
+#con3_1 img.albumPlay{
+    width:37px;
+    top:291px;
+    left:120px;
+    display:none;
+}
+#con3_1 img.albumPause{
+    width:37px;
+    top:291px;
+    left:120px;
+    display:block;
+}
+#con3_1 img.albumNext{
+    left:175px;
+}
+
+#con3 #con3_2{
+    width:400px;
+    height:400px;
+    float: left;
+    position: relative;
+    top:-350px;    
+    left:370px;
+    border-radius:6px;
+}
+#con3_2 ul#recommand{
+    margin:5px auto;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: normal;
+}
+#con3_2 ul#recommand li{
+    position: relative;
+    height:90px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    background-color:#C7B9A5;
+    opacity: 0.8;
+}
+/* 鼠标移到推荐栏，自动有弹出效果 */
+#con3_2 ul#recommand li:hover{
+   transition:all 0.6s;
+   transform:translate(10px,-5px);
+}
+ul#recommand li img.play{
+    position: absolute;
+    top: 30px;
+    left:30px;
+    width:30px;
+    z-index: 1;
+    display:none;
+}
+ul#recommand p.reBg{
+    margin:5px;
+    width:80px;
+    height:80px;
+}
+ul#recommand p.reBg img{
+    width:80px;
+    height:80px;
+    margin-top: 5px;
+    border-radius: 50%;
+    
+}
+.reImgRoll{
+    animation: reImgRolling 10s linear infinite;
+}
+@keyframes reImgRolling{
+    0%{
+        transform:rotate(0deg);
+    }
+    50%{
+        transform:rotate(180deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+ul#recommand p.reSongName:hover,p.reSingerName:hover{
+    cursor: pointer;
+    font-weight:700;
+}
+ul#recommand p.reSongName{
+    position:absolute;
+    top:20px;
+    left:120px;
+    margin:0;
+}
+ul#recommand p.reSingerName{
+    position:absolute;
+    top:50px;
+    left:120px;;
+    margin:0;
+}
+/* 侧边栏排行榜 */
+#con4{
+    position: relative;
+    float: left;
+    width:35%;
+    height:500px;
+    background-color:#463C32;
+    background:url(../imgs/音乐/con4/像风一样.jpg) no-repeat center center;
+    background-size:cover;
+}
+#con4 .list{
+    position: relative;
+    left:20px;
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* 排行榜栏调整位置 */
+#con4 p span{
+    font-size: 18px;
+    display: inline-block;
+    width:40px;
+    margin:0 30px;
+    font-weight: 500;
+}
+#con4 p span:nth-child(2){
+    margin-left: 40px;
+}
+#con4 p span:nth-child(4){
+    width:80px;
+    margin-right: 0;
+}
+#con4 ul{
+    list-style-type: none;
+    float: left;
+    margin-top: 0;
+    padding-left: 20px;
+}
+#con4 ul li{
+    height:40px;
+}
+#con4 ul.sideSongName li:hover{
+    transition:all 0.6s;
+    transform:translate(2px,2px);
+    font-weight: bold;
+}
+#con4 ul.sideSingerName li:hover{
+    transition:all 0.6s;
+    transform:translate(2px,2px);
+    font-weight: bold;
+}
+
+#con4 ul.sideSongTime{
+   padding-left: 55px;
+}
+
+#con4 ul.sideSongFavour{
+    padding-left: 85px;
+}

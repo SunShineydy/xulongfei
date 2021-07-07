@@ -1,0 +1,404 @@
+body{
+    width:100%;
+    margin: 0;
+    padding: 0;
+    /* background-color:#444444; */
+    font-family:"Microsoft Yahei";
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+a:visited{
+    color:white;
+}
+/* 导航栏 */
+#nav{
+    position: relative;
+    float: left;
+    width: 100%;
+    height:50px;
+    color: white;
+    background-color:#444444;
+    z-index: 999;
+}
+#nav div{
+    width: 1000px;
+    height:50px;
+    margin:0 auto;
+    /* background-color:wheat; */
+}
+#nav p#movieLogo{
+    float: left;
+    margin:0;
+    line-height: 50px;
+    margin-left: 20px;
+}
+#nav ul#movieNav{
+    width:600px;
+    height:50px;
+    margin:0 auto;
+    line-height: 50px;
+    list-style-type: none;
+}
+#nav ul#movieNav li{
+    float: left;
+    text-align:center;
+    width:100px;
+}
+#nav ul#movieNav li:hover{
+    cursor: pointer;
+    animation: nav 10s linear infinite;
+
+}
+@keyframes nav {
+    0%{
+        background-color:#59332A;
+    }
+    20%{
+        background-color:#5A855D;
+    }
+    50%{
+        background-color:#2A2A59;
+    }
+    75%{
+        background-color:#4A516B;
+    }
+    100%{
+        background-color:#B97F62;
+    }
+}
+#nav ul#movieNav li:nth-child(6) {
+    position: relative;
+    left:100px;
+    width:50px;
+    animation:none;
+}
+#nav ul#movieNav li:nth-child(6) img{
+    width:30px;
+    vertical-align: middle;
+    /* margin-left: 150px; */
+}
+#nav ul#movieNav li:nth-child(7) {
+    position: relative;
+    left:100px;
+    width:50px;
+    animation:none;
+}
+#nav ul#movieNav li:nth-child(7) input {
+    border:0;
+    display: none;
+    color:white;
+    /* 输入框景背景透明 */
+    background:transparent;
+    /* 去除聚焦时的外边框 */
+    outline:none;
+}
+
+.inputBorderBottom{
+    border-bottom:2px solid white; 
+    animation: input 1s linear 1;
+}
+@keyframes input{
+    0%{
+        opacity: 0;
+        top:10px;
+    }
+    100%{
+        opacity: 1;
+        top:0px;
+    }
+}
+
+/* 主内容区  轮播图 */
+#main{
+    position:relative;
+    width:100%;
+    /* height:550px; */
+    height:100vh;
+    background:url(../imgs/电影/loop/夺冠.jpg) no-repeat center center;
+    background-size: cover;
+    /* z-index: -1; */
+}
+#contain1{
+    width:1264px;
+    /* height:500px; */
+    height:calc(100vh - 50px);
+    margin:0 auto;
+}
+#con1{
+    position: relative;
+    float: left;
+    width:948px;
+    /* height:500px; */
+    height:calc(100vh - 50px);
+    background-color:tan;
+    /* background: url(../imgs/电影/loop/肖申克的救赎.jpg) no-repeat;
+    background-size:cover; */
+}
+#con1 img.movieImg{
+    width:100%;
+    height:100%;
+    opacity: 0.9;
+}
+#con1 #con1_1{
+    width:400px;
+    height:200px;
+    position:absolute;
+    top:300px;
+    left:30px;
+    color:white;
+    background-color: apparently;
+}
+
+
+/* 轮播图内容 */
+#con1_1 p.movieName{
+    margin: 0;
+    margin-left:-15px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: bold;
+
+    /* animation: delayShow 1s linear 1.2; */
+
+}
+#con1_1 p.movieKind{
+    font-size: 14px;
+    font-weight: normal;
+
+    /* animation: delayShow 1s linear 1.4; */
+}
+#con1_1 p.movieLevel{
+    font-size: 12px;
+
+ }
+#con1_1 p.movieLevel img{
+    display: inline-block;
+    width:12px;
+    height:12px;
+    line-height: 12px;
+}
+
+#con1_1 p.movieSummary{
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+
+
+
+/* 排行榜 */
+#con2{
+    position:relative;
+    float:right;
+    width:calc( 1264px - 948px);
+    /* width:316px; */
+    /* height:500px; */
+    height:calc(100vh - 50px);
+    background:url(../imgs/电影/loop/夺冠_sidebar.jpg) no-repeat center center;
+    background-size: cover;
+    /* opacity:0.8; */
+    color:#314F87;
+    font-weight: bold;
+    background-color: #83316F;
+}
+
+
+/* 推荐 */
+#con3{
+    float: left;
+    width: 100%;
+    height:273px;
+    background:url(../imgs/电影/sidebar/bg2.webp) no-repeat;
+    background-size: cover;
+    background-color:aquamarine;
+}
+#con3 span.con3_title{
+    position:relative;
+    left:100px;
+    top:10px;
+    width:100px;
+    margin:0;
+    font-size: 25px;
+    color:white;
+}
+#con3_1{
+    position: relative;
+    width:1100px;
+    height:230px;
+    margin:0 auto;
+    /* background-color: yellowgreen; */
+}
+/* 设置箭头 */
+#con3_1 .arrow{
+    position:absolute;
+    width:80px;
+}
+#con3_1 img.left{
+     /* 添加效果，鼠标衣服，箭头变大 */
+    transition:all 0.5s;
+}
+#con3_1 img.left:hover{
+    cursor: pointer;
+    transform:scale(1.2);
+    transform:translateX(-10px);
+}
+#con3_1 img.right{
+    /* 添加效果，鼠标衣服，箭头变大 */
+   transition:all 0.5s;
+}
+#con3_1 img.right:hover{
+   cursor: pointer;
+   transform:scale(1.2);
+   transform:translateX(10px);
+}
+
+#con3_1 .left{
+    top:75px;
+    left:-70px;
+}
+#con3_1 .right{
+    top:75px;
+    right:-70px;
+}
+#con3 ul#recommandUl{
+    list-style-type:none;
+    /* position:absolute; */
+    margin:0;
+    padding:0;
+}
+#con3 ul#recommandUl li{
+    display: inline-block;
+    width:250px;
+    height:180px;
+    margin: 25px 10px;
+
+    /* text-align:center; */
+    border-radius: 7px;
+    background-color: #F6C6EA;
+}
+#con3 ul#recommandUl li img{
+    width:260px;
+    height:180px;
+    border-radius: 7px;
+    /* transition: all 0.6s;表示所有的属性变化在0.6s的时间段内完成。 */
+    transition: all 0.6s
+}
+#con3 ul#recommandUl li img:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+}
+#con3 ul#recommandUl li p{
+    position: relative;
+    margin:0;
+    color:white;
+    /* width:200px;
+    height:200px; */
+    top:-100px;
+    left:30px;
+    opacity: 0;
+    user-select:none;
+    /* display:none; */
+}
+
+#con3 ul#recommandUl li p span.title{
+    position:absolute;
+    font-size: 25px;
+}
+#con3 ul#recommandUl li p span.kind{
+    font-size: 14px;
+    position:absolute;
+    top:50px;
+    width:150px;
+}
+
+/* 我的喜欢 */
+#con4{
+    float: left;
+    width: 100%;
+    /* height:600px; */
+    height:100vh;
+    background-color:darkorange;
+
+    background:url(../imgs/电影/favourite/刺杀小说家.jpg) no-repeat;
+    background-size: cover;
+}
+
+#con4_1{
+    position: relative;
+    width:1263px;
+    height:600px;
+    margin:0 auto;
+}
+#con4_1 p.con4Title,p.con4Info{
+    position:absolute;
+    margin:0;
+    font-size: 70px;
+    top:50px;
+    left:50px;
+    color:#BF1363;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#con4_1 p.con4Title img{
+   font-weight: bold;
+}
+#con4_1 p.con4Info{
+    font-size: 16px;
+    top:150px;
+    color:#BF1363;
+}
+#con4_1 p.con4Info span.infoName{
+    position:absolute;
+    font-size:40px;
+    width:300px;
+}
+#con4_1 p.con4Info span.infoIntro{
+    position:absolute;
+    top:70px;
+    text-indent: 2em;
+    width:300px;
+}
+#con4_1 ul.favour{
+    list-style-type:none;
+    position:absolute;
+    width:840px;
+    margin:0;
+}
+
+#con4_1 ul.favour li{
+    position: relative;
+    width:180px;
+    height:250px;
+    border-radius: 5px;
+    background-color:tomato;
+}
+#con4_1 ul.favour li img{
+    width:180px;
+    height:250px;
+    border-radius: 5px;
+}
+#con4_1 ul.favour li img:hover{
+    cursor: pointer;
+}
+/* 第一行 */
+#con4_1 ul.con4_1_1{
+    top:40px;
+    left:360px;
+}
+#con4_1 ul.con4_1_1 li{
+    position: relative;
+    float: left;
+    margin-right: 30px;
+}
+/* 第二行 */
+#con4_1 ul.con4_1_2{
+    top:320px;
+    left:360px;
+}
+#con4_1 ul.con4_1_2 li{
+    float: left;
+    margin-right: 30px;
+}

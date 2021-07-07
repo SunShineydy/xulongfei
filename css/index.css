@@ -1,0 +1,199 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:#FFE5E2;
+    background: url(../imgs/login/5.jpeg) no-repeat;
+    background-size:cover;
+
+    font-family: "Micorsoft YaHei";
+
+}
+/* 背景音乐前面的图片 */
+div#audioBox img#musicImg{
+    vertical-align:middle;
+    width:5%;
+    animation: spinning 5s linear infinite;    
+}
+@keyframes spinning{
+    0%  { transform: rotate(0deg);}
+    50% { transform: rotate(180deg);}
+    100%{ transform: rotate(360deg);}
+}
+/* 背景音乐的歌曲名 */
+div#audioBox p#musicName{
+    /* overflow-x:hidden; */
+    display: inline-block;
+    vertical-align:middle;
+    font-family:'Times New Roman', Times, serif;
+    background: url(../imgs/login/backgroundMusic.png) no-repeat 10%;
+    background-size:2%;
+    font-size:12px;
+    margin-bottom: 0;
+    color:#D291BC;
+    animation: rolling 20s linear infinite alternate;    
+}
+@keyframes rolling{
+    0%  { margin-left: 20%;}
+   20%  { margin-left: 35%;}
+   40%  { margin-left: 45%;}
+   60%  { margin-left: 55%;}
+   80%  { margin-left: 65%;}
+   100% { margin-left: 75%;}
+}
+div#audioBox p#date{
+    position: absolute;
+    right:10px;
+    font-size:12px;
+    font-family:'Times New Roman', Times, serif;
+    color:#D291BC;
+}
+/*  登录界面  */
+div#loginContainer{
+    /* 盒子先设为flex布局 */
+
+    display:flex;
+    justify-content:center;
+    height:calc(100vh - 30px);
+    position:relative;
+
+}
+div#loginWelcome{
+    margin:auto;
+    height:500px;
+    width:900px;
+    /* background-color: #CA8A8B; */
+    border:none;
+    position: relative; 
+}
+p#welcomeWord{
+    font-family:'Times New Roman', Times, serif;
+    display:inline-block;
+    width:500px;
+    height:500px;
+    margin:0;
+    background-color: #acc7eb;
+    position: absolute;
+    top:0;
+    left:0;
+    background:url("../imgs/login/loginForm.jpg") no-repeat center center;
+    background-size: cover;
+    border-radius: 2px;
+    opacity: 0.8;
+
+    
+    transition: all 1s;
+    /* transform:translateX(400px); */
+}
+
+p#welcomeWord span{
+    color:#585b7e;
+    font-size: 100px;
+    position: relative;
+}
+p#welcomeWord span{
+    top:180px;
+    left:50px;
+    font-style: italic;
+    letter-spacing: 10px;
+}
+/* 登录表单 */
+form#loginForm{
+    /* 子元素也要是flex布局，子元素按照column排列 */
+    width: 400px;
+    height: 500px;
+    display:inline-block;
+
+    background:url("../imgs/login/loginForm2.png") no-repeat center center;
+    background-size:cover;
+    opacity: 0.8;   
+    border-radius:10px;
+    text-align:center;
+    position: absolute;
+    right: 0;
+    top:0;
+    z-index: 999;
+
+    transition: all 1s;
+    /* transform:translateX(-500px); */
+}
+form#loginForm h2{
+    position: relative;
+    top:100px;
+    font-size: 30px;
+    color: black;
+    font-weight: 800;
+    letter-spacing:5px;
+}
+
+form#loginForm input{
+    position:absolute;
+    top:130px;
+    height:36px;
+    border:none;
+    border-bottom: 1px solid white;
+    background-color: rgba(0, 0, 0,0);
+    border-radius:4px;
+    outline:none;
+    color:black;
+
+    background-color:transparent !important;
+    background-image:none !important;
+    box-sizing: 0 0 0 1000px white inset !important;
+ }
+ form#loginForm input:focus{
+
+  
+    outline:none;
+
+ }
+ form#loginForm input#username{
+    top:200px;
+    left:120px;
+ }
+ form#loginForm input#password{
+    top:260px;
+    left:120px;
+ }
+ form#loginForm button#btn{
+    position:absolute;
+    top:320px;
+    left:170px;
+
+    height:30px;
+    border-radius:4px;
+    background-color:white;
+    outline:none;
+    color:black;
+    cursor: pointer;
+    opacity: 0.6;
+ }
+
+form#loginForm span#error{
+    position: absolute;
+    bottom:120px;
+    left:135px;
+} 
+
+/* 背景图片 */
+div#backgroundImg {
+    position: absolute;
+}
+div#backgroundImg{
+    position: absolute;
+    right: 20px;
+    bottom:20px;
+    width:50px;
+    height:50px;
+    background:url(../imgs//login/风车.png) no-repeat;
+    background-size: cover;
+}
+
+div#backgroundImg:hover{
+    cursor: pointer;
+    animation: spinning2 10s linear  running;   
+}
+@keyframes spinning2{
+    0%  { transform: rotate(0deg);}
+    50% { transform: rotate(180deg);}
+    100%{ transform: rotate(360deg);}
+}
